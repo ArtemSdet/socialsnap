@@ -1,0 +1,7 @@
+{
+  "name": "socialsnap",
+  "version": "1.0.0",
+  "dependencies": {
+    "firebase": "^9.23.0"
+  }
+}

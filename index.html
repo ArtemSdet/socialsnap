@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialSnap</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>SocialSnap</h1>
+    <button id="loginBtn">Login</button>
+  </header>
+  <section>
+    <h2>Generate Social Media Posts</h2>
+    <label for="niche">Select Niche:</label>
+    <select id="niche">
+      <option value="crypto">Crypto</option>
+      <option value="fitness">Fitness</option>
+      <option value="travel">Travel</option>
+    </select>
+    <label for="keywords">Keywords:</label>
+    <input id="keywords" placeholder="e.g., Bitcoin, DeFi">
+    <button id="generateBtn">Generate</button>
+    <div id="output"></div>
+  </section>
+  <footer>
+    <a href="#">Support</a> | <a href="#">Feedback</a> | <a href="#">Pricing</a>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+  <script>
+    const firebaseConfig = { /* Paste your config here from Firebase Console */ };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
